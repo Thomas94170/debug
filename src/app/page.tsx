@@ -1,8 +1,8 @@
+import Link from "next/dist/client/link"
 
 
 
-
-export default function Example() {
+export default function SignIn() {
   return (
     <>
       {/*
@@ -23,9 +23,9 @@ export default function Example() {
               </h2>
               <p className="mt-2 text-sm leading-6 text-gray-500">
                 Not a member?{' '}
-                <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                <Link href="/newaccount" className="font-semibold text-indigo-600 hover:text-indigo-500">
                   New account
-                </a>
+                </Link>
               </p>
             </div>
 
@@ -90,15 +90,6 @@ export default function Example() {
                       className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Sign in
-                    </button>
-                  </div>
-
-                  <div>
-                    <button
-                      type="submit"
-                      className="flex items-center w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                      Sign in with Google
                     </button>
                   </div>
                 </form>
